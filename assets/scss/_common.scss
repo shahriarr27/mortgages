@@ -72,8 +72,13 @@ h3{
     background: $primary;
   }
 }
+
+.container{
+  max-width: 95%;
+}
+
 section{
-  padding: 80px 0px;
+  padding: 50px 0px;
 }
 
 $box-shadow-dark: 0px 0px 20px rgba(0, 0, 0, 0.1);

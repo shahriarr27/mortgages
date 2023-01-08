@@ -65,8 +65,12 @@ h3::before {
   background: #006699;
 }
 
+.container {
+  max-width: 95%;
+}
+
 section {
-  padding: 80px 0px;
+  padding: 50px 0px;
 }
 
 header .navbar {
@@ -75,7 +79,7 @@ header .navbar {
   z-index: 50;
   position: relative;
   background: white;
-  padding: 20px 20px;
+  padding: 20px 0px;
 }
 
 header .navbar .navbar-brand {
@@ -298,6 +302,16 @@ footer .footer-wrapper .links ul li a:hover {
   color: white;
 }
 
+.main .left-side {
+  height: 90vh;
+  border: 1px dashed #ccc;
+  padding: 30px 15px;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
 .main .left-side .left-widget {
   padding: 0px 5px 20px;
   border-radius: 5px;
@@ -308,7 +322,6 @@ footer .footer-wrapper .links ul li a:hover {
 }
 
 .main .right-side {
-  border-left: 1px solid #ccc;
   padding-left: 40px;
 }
 
@@ -333,6 +346,8 @@ footer .footer-wrapper .links ul li a:hover {
 .main .right-side .property-wrapper .single-property-wrapper .card .card-header {
   border-radius: 0px;
   overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .main .right-side .property-wrapper .single-property-wrapper .card .card-header img {
@@ -344,6 +359,17 @@ footer .footer-wrapper .links ul li a:hover {
      object-position: center center;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.main .right-side .property-wrapper .single-property-wrapper .card .card-header .card-title {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: -5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background: #ffcb0f;
+  font-size: 16px;
 }
 
 .main .right-side .property-wrapper .single-property-wrapper .card:hover {
@@ -370,8 +396,92 @@ footer .footer-wrapper .links ul li a:hover {
   background: white;
 }
 
+.single-page-banner {
+  background: url(../images/It-1.jpg);
+  min-height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.single-page-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #0a0a0a75;
+  z-index: 1;
+}
+
+.single-page-banner .banner-inner {
+  position: absolute;
+  z-index: 10;
+  max-width: 80%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.single-page-banner .banner-inner .big-heading {
+  display: block;
+  text-align: center;
+}
+
+.single-page-banner .banner-inner .big-heading h1 {
+  background: #08080870;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #0303035e;
+  font-size: 30px;
+}
+
+.main {
+  padding: 80px 0px;
+}
+
+.main .main-wrapper {
+  margin-bottom: 80px;
+}
+
+.main .main-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+.main .main-wrapper .section-heading {
+  position: relative;
+}
+
+.main .main-wrapper .section-heading h3 {
+  font-size: 22px;
+  color: #181818;
+  margin-bottom: 15px;
+}
+
+.main .main-wrapper .img-wrapper img {
+  border-radius: 5px;
+}
+
+.main .main-wrapper .texts p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.main .left-style .content-wrapper {
+  padding-left: 5%;
+}
+
+.main .right-style .content-wrapper {
+  padding-right: 5%;
+}
+
 .home-banner {
-  background: url(assets/images/bg-1.jpg);
+  background: url(../images/bg-1.jpg);
   min-height: 200px;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -386,7 +496,7 @@ footer .footer-wrapper .links ul li a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background: #0083d557;
+  background: #14141457;
   z-index: 1;
 }
 
@@ -407,143 +517,6 @@ footer .footer-wrapper .links ul li a:hover {
 }
 
 .home-banner .banner-inner .big-heading h1 {
-  background: #ffffff70;
-  padding: 10px 30px;
-  border-radius: 3px;
-  color: #ffffff;
-  text-shadow: 2px 2px 10px #0303035e;
-  font-size: 30px;
-}
-
-.main {
-  padding: 80px 0px;
-}
-
-.main .main-wrapper {
-  margin-bottom: 80px;
-}
-
-.main .main-wrapper:last-of-type {
-  margin-bottom: 0;
-}
-
-.main .left-style .img-wrapper img {
-  border-radius: 5px;
-}
-
-.main .left-style .content-wrapper {
-  padding-left: 5%;
-}
-
-.main .left-style .content-wrapper .section-heading {
-  position: relative;
-}
-
-.main .left-style .content-wrapper .section-heading::after {
-  content: '';
-  position: absolute;
-  top: 40%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  height: .5px;
-  background: #dfdfdf;
-  z-index: -1;
-}
-
-.main .left-style .content-wrapper .section-heading h3 {
-  font-size: 22px;
-  color: #181818;
-  margin-bottom: 15px;
-  border: 1px solid #dfdfdf;
-  display: inline-block;
-  padding: 10px 15px;
-  border-radius: 3px;
-  background: white;
-}
-
-.main .left-style .content-wrapper .texts p {
-  font-size: 15px;
-}
-
-.main .right-style .img-wrapper img {
-  border-radius: 5px;
-}
-
-.main .right-style .content-wrapper {
-  padding-right: 15%;
-}
-
-.main .right-style .content-wrapper .section-heading {
-  position: relative;
-}
-
-.main .right-style .content-wrapper .section-heading::after {
-  content: '';
-  position: absolute;
-  top: 40%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  height: .5px;
-  background: #dfdfdf;
-  z-index: -1;
-}
-
-.main .right-style .content-wrapper .section-heading h3 {
-  font-size: 22px;
-  color: #181818;
-  margin-bottom: 15px;
-  border: 1px solid #dfdfdf;
-  display: inline-block;
-  padding: 10px 15px;
-  border-radius: 3px;
-  background: white;
-}
-
-.main .right-style .content-wrapper .texts p {
-  font-size: 15px;
-}
-
-.about-banner {
-  background: url(assets/images/bg-2.jpg);
-  min-height: 200px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.about-banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #0083d575;
-  z-index: 1;
-}
-
-.about-banner .banner-inner {
-  position: absolute;
-  z-index: 10;
-  max-width: 80%;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.about-banner .banner-inner .big-heading {
-  display: block;
-  text-align: center;
-}
-
-.about-banner .banner-inner .big-heading h1 {
   background: #ffffff70;
   padding: 10px 30px;
   border-radius: 3px;

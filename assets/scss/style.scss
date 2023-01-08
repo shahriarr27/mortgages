@@ -3,12 +3,13 @@
 @import 'footer';
 @import 'select2';
 @import 'home';
+@import 'about';
 
 
 
 
 .home-banner{
-  background: url(assets/images/bg-1.jpg);
+  background: url(../images/bg-1.jpg);
   min-height: 200px;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@
     position: absolute;
     top: 0;left: 0;
     bottom: 0;right: 0;
-    background: #0083d557;
+    background: #14141457;
     z-index: 1;
   }
   .banner-inner{
@@ -45,133 +46,10 @@
   }
 }
 
-.main{
-  padding: 80px 0px;
-  .main-wrapper{
-    margin-bottom: 80px;
-    &:last-of-type{
-      margin-bottom: 0;
-    }
-  }
-  .left-style{
-    .img-wrapper{
-      img{
-        border-radius: 5px;
-      }
-    }
-    .content-wrapper{
-      padding-left: 5%;
-      .section-heading{
-        position: relative;
-        &::after{
-          content: '';
-          position: absolute;
-          top: 40%;
-          left: 0;
-          transform: translateY(-50%);
-          width: 100%;
-          height: .5px;
-          background: #dfdfdf;
-          z-index: -1;
-        }
-        h3{
-          font-size: 22px;
-          color: $black;
-          margin-bottom: 15px;
-          border: 1px solid #dfdfdf;
-          display: inline-block;
-          padding: 10px 15px;
-          border-radius: 3px;
-          background: white;
-        }
-      }
-      .texts{
-        p{
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  .right-style{
-    .img-wrapper{
-      img{
-        border-radius: 5px;
-      }
-    }
-    .content-wrapper{
-      padding-right: 15%;
-      .section-heading{
-        position: relative;
-        &::after{
-          content: '';
-          position: absolute;
-          top: 40%;
-          left: 0;
-          transform: translateY(-50%);
-          width: 100%;
-          height: .5px;
-          background: #dfdfdf;
-          z-index: -1;
-        }
-        h3{
-          font-size: 22px;
-          color: $black;
-          margin-bottom: 15px;
-          border: 1px solid #dfdfdf;
-          display: inline-block;
-          padding: 10px 15px;
-          border-radius: 3px;
-          background: white;
-        }
-      }
-      .texts{
-        p{
-          font-size: 15px;
-        }
-      }
-    }
-  }
-}
 
 
 
-.about-banner{
-  background: url(assets/images/bg-2.jpg);
-  min-height: 200px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  &::after{
-    content: '';
-    position: absolute;
-    top: 0;left: 0;
-    bottom: 0;right: 0;
-    background: #0083d575;
-    z-index: 1;
-  }
-  .banner-inner{
-    position: absolute;
-    z-index: 10;
-    max-width: 80%;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    .big-heading{
-      display: block;
-      text-align: center;
-      h1{
-        background: #ffffff70;
-        padding: 10px 30px;
-        border-radius: 3px;
-        color: $white;
-        text-shadow: 2px 2px 10px #0303035e;
-        font-size: 30px;
-      }
-    }
-  }
-}
+
 
 
 .history-banner{

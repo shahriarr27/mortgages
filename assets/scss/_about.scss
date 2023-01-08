@@ -1,0 +1,77 @@
+
+.single-page-banner{
+  background: url(../images/It-1.jpg);
+  min-height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    bottom: 0;right: 0;
+    background: #0a0a0a75;
+    z-index: 1;
+  }
+  .banner-inner{
+    position: absolute;
+    z-index: 10;
+    max-width: 80%;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .big-heading{
+      display: block;
+      text-align: center;
+      h1{
+        background: #08080870;
+        padding: 10px 30px;
+        border-radius: 3px;
+        color: $white;
+        text-shadow: 2px 2px 10px #0303035e;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.main{
+  padding: 80px 0px;
+  .main-wrapper{
+    margin-bottom: 80px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    .section-heading{
+      position: relative;
+      h3{
+        font-size: 22px;
+        color: $black;
+        margin-bottom: 15px;
+      }
+    }
+    .img-wrapper{
+      img{
+        border-radius: 5px;
+      }
+    }
+    .texts{
+      p{
+        font-size: 16px;
+        text-align: justify;
+      }
+    }
+  }
+  .left-style{
+    .content-wrapper{
+      padding-left: 5%;
+    }
+  }
+  .right-style{
+    .content-wrapper{
+      padding-right: 5%;
+    }
+  }
+}
