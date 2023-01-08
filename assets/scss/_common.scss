@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
+$white: #ffffff;
+$semi-ash: #F8F9FB;
+$black: #181818;
+$primary: #006699;
+$text-color: #747474;
+$yellow:#ffcb0f;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 111, 197);
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+p {
+  margin: 0;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+  color: $black;
+  font-weight: 700;
+}
+
+
+h3{
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  color: $black;
+  font-weight: 700;
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  &::before{
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $primary;
+  }
+}
+section{
+  padding: 80px 0px;
+}
+
+$box-shadow-dark: 0px 0px 20px rgba(0, 0, 0, 0.1);
+$box-shadow-down: 0px 10px 20px rgba(0, 0, 0, 0.1);
