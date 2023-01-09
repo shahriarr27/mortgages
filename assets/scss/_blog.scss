@@ -60,6 +60,9 @@
         }
         .card-body{
            padding: 10px 0;
+           .sm-meta-author{
+             display: none;
+           }
            .card-title{
               a{
                  text-decoration: none;
